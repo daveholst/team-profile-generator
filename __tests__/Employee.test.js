@@ -17,3 +17,11 @@ describe('Employee Class - Param types are correct', () => {
     );
   });
 });
+
+describe('Employee Class - Check if email is valid ', () => {
+  it('throw error on incorrect param types', () => {
+    expect(() => {
+      new Employee('Dave', 123456, 'fakeEmail.com');
+    }).toThrow('Invalid Email Entered');
+  });
+});
