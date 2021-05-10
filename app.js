@@ -1,9 +1,10 @@
 const inquirer = require('inquirer');
-const Manager = require('./lib/Manager.js');
-const Engineer = require('./lib/Engineer.js');
-const Intern = require('./lib/Intern.js');
 
-const { managerBuilder, engineerBuilder } = require('./lib/TeamBuilder');
+const {
+  managerBuilder,
+  engineerBuilder,
+  internBuilder,
+} = require('./lib/TeamBuilder');
 
 async function employeeType() {
   const employeeTypeQuestions = [
@@ -36,12 +37,19 @@ async function teamBuilder() {
     // query the user for next input type, or if finished
     const nextCall = await employeeType();
     if (nextCall === 'Add an Engineer') {
-      console.log('ad eng');
-    } else if (nextCall === 'Add an Intern') {
-      console.log('add intern');
-    } else {
-      console.log('start building!');
+      const engineer = await engineerBuilder();
+      teamMembers.push(engineer);
+      teamBuilder();
+      return;
     }
+    if (nextCall === 'Add an Intern') {
+      const intern = await internBuilder();
+      teamMembers.push(intern);
+      teamBuilder();
+      return;
+    }
+    console.log('start building!');
+
     // ask what to build next
 
     // log out the teamMembers Array
