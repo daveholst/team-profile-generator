@@ -6,6 +6,7 @@ const {
   internBuilder,
 } = require('./lib/TeamBuilder');
 
+// fucntion to query what the user would like to do next (add more team members or build it out!)
 async function employeeType() {
   const employeeTypeQuestions = [
     {
@@ -48,9 +49,8 @@ async function teamBuilder() {
       teamBuilder();
       return;
     }
+    // if we get to here it is time to start building!
     console.log('start building!');
-
-    // ask what to build next
 
     // log out the teamMembers Array
     console.log(teamMembers);
