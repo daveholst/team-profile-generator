@@ -55,25 +55,36 @@ async function employeeType() {
     },
   ];
   try {
-    const manager = await managerBuilder();
-    console.log(manager);
+    const response = await inquirer.prompt(employeeTypeQuestions);
+    return response.employeeType;
   } catch (error) {
     console.error(error);
   }
 }
 
-// async function buildManager(questions) {
-//   const answers = await inquirer.prompt(questions)
-// }
+const teamMembers = [];
 
-async function init() {
-  const teamMembers = [];
+async function teamBuilder() {
   try {
-    const manager = await managerBuilder();
-    console.log(manager);
+    // check if a manager exists in the teamMembers array (use officeNumber )
+    if (!teamMembers.some((e) => e.officeNumber)) {
+      const manager = await managerBuilder();
+      teamMembers.push(manager);
+      teamBuilder();
+      return;
+    }
+    const nextCall = await employeeType();
+    if (nextCall === 'Add an Engineer') {
+      console.log('ad eng');
+    } else if (nextCall === 'Add an Intern') {
+      console.log('add intern');
+    } else {
+      console.log('start building!');
+    }
+    // ask what to build next
   } catch (error) {
     console.error(error);
   }
 }
 
-init();
+teamBuilder();
