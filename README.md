@@ -27,9 +27,12 @@ This project is licensed under the **MIT License**: https://opensource.org/licen
 
 [![youtube screenshot](http://img.youtube.com/vi/PCDo1_-s0aY/0.jpg)](http://www.youtube.com/watch?v=PCDo1_-s0aY)
 
-#### Still Screenshot:
+#### Still Screenshot - CLI:
 
 ![cli screenshot](./assets/screenshots/cli-screenshot.jpg)
+
+#### Still Screenshot - Generated Report:
+
 ![report screenshot](./assets/screenshots/report-screenshot.jpg)
 
 ## Installation
