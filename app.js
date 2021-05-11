@@ -1,4 +1,5 @@
 const inquirer = require('inquirer');
+const reportBuilder = require('./lib/reportBuilder');
 
 const {
   managerBuilder,
@@ -25,7 +26,6 @@ async function employeeType() {
 }
 
 const teamMembers = [];
-
 async function teamBuilder() {
   try {
     // check if a manager exists in the teamMembers array (use officeNumber )
@@ -49,11 +49,8 @@ async function teamBuilder() {
       teamBuilder();
       return;
     }
-    // if we get to here it is time to start building!
-    console.log('start building!');
-
-    // log out the teamMembers Array
-    console.log(teamMembers);
+    // input over, build report
+    reportBuilder(teamMembers);
   } catch (error) {
     console.error(error);
   }
