@@ -11,4 +11,7 @@ describe('Generate Managers', () => {
   it('generates a report when no managers are given', () => {
     expect(reportBuilder(noManager())).toMatchSnapshot();
   });
+  it('generates a report with managers when managers are given', () => {
+    expect(reportBuilder(noEngineers())).toMatchSnapshot();
+  });
 });
