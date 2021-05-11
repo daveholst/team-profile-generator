@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Generate Managers generates a report when no managers are given 1`] = `
+"<!DOCTYPE html>
+<html lang=\\"en\\">
+  <head>
+    <meta charset=\\"UTF-8\\" />
+    <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\" />
+    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\" />
+    <title>Team Report</title>
+    <link
+      rel=\\"stylesheet\\"
+      href=\\"https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css\\"
+    />
+  </head>
+  <body>
+    <section class=\\"hero is-warning\\">
+      <div class=\\"hero-body\\">
+        <p class=\\"title\\">Project 486 - Team Members</p>
+        <p class=\\"subtitle\\">System Generated Report</p>
+      </div>
+    </section>
+    <section id=\\"managers\\" class=\\"section is-medium\\">
+      <div class=\\"container\\">
+        <h1 class=\\"title\\">Team Managers</h1>
+        <h2 class=\\"subtitle\\">The Team managers for this project are:</h2>
+        undefined
+      </div>
+    </section>
+    <section id=\\"engineers\\" class=\\"section is-medium\\">
+      <h1 class=\\"title\\">Engineers</h1>
+      <h2 class=\\"subtitle\\">The Engineers for this project are:</h2>
+    </section>
+    <section id=\\"interns\\" class=\\"section is-medium\\">
+      <h1 class=\\"title\\">Interns</h1>
+      <h2 class=\\"subtitle\\">The Interns on this project are:</h2>
+    </section>
+  </body>
+</html>
+"
+`;
+
+exports[`Generate Report generates an empty report when no team object given 1`] = `
+"<!DOCTYPE html>
+<html lang=\\"en\\">
+  <head>
+    <meta charset=\\"UTF-8\\" />
+    <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\" />
+    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\" />
+    <title>Team Report</title>
+    <link
+      rel=\\"stylesheet\\"
+      href=\\"https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css\\"
+    />
+  </head>
+  <body>
+    <section class=\\"hero is-warning\\">
+      <div class=\\"hero-body\\">
+        <p class=\\"title\\">Project 486 - Team Members</p>
+        <p class=\\"subtitle\\">System Generated Report</p>
+      </div>
+    </section>
+    <section id=\\"managers\\" class=\\"section is-medium\\">
+      <div class=\\"container\\">
+        <h1 class=\\"title\\">Team Managers</h1>
+        <h2 class=\\"subtitle\\">The Team managers for this project are:</h2>
+        undefined
+      </div>
+    </section>
+    <section id=\\"engineers\\" class=\\"section is-medium\\">
+      <h1 class=\\"title\\">Engineers</h1>
+      <h2 class=\\"subtitle\\">The Engineers for this project are:</h2>
+    </section>
+    <section id=\\"interns\\" class=\\"section is-medium\\">
+      <h1 class=\\"title\\">Interns</h1>
+      <h2 class=\\"subtitle\\">The Interns on this project are:</h2>
+    </section>
+  </body>
+</html>
+"
+`;
