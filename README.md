@@ -1,10 +1,10 @@
-# team-profile-generator
+# Team Profile Generator
 
 Node.JS app that generates a HTML report of employees from user Input via CLI
 
 # Readme Generator
 
-This is a program that uses Node.JS and inquirer to build a list of team members from the command line and output a styled html page that includes all team memebers.
+This is a program that uses Node.JS and inquirer to build a list of team members from the command line and output a styled html page that includes all team members.
 
 ## Table of Contents:
 
@@ -25,7 +25,7 @@ This project is licensed under the **MIT License**: https://opensource.org/licen
 
 #### YouTube video demonstrating how to use the application:
 
-[![](http://img.youtube.com/vi/GSvTLhFcziY/0.jpg)](http://www.youtube.com/watch?v=GSvTLhFcziY)
+[![youtube screenshot](http://img.youtube.com/vi/PCDo1_-s0aY/0.jpg)](http://www.youtube.com/watch?v=PCDo1_-s0aY)
 
 #### Still Screenshot:
 
@@ -69,10 +69,10 @@ npm test
 
 ## Tech Stack
 
-Jest: https://www.npmjs.com/package/jest
-WesBos Linter Config: https://github.com/wesbos/eslint-config-wesbos
-Inquirer: https://www.npmjs.com/package/inquirer
-Email Validator: https://www.npmjs.com/package/email-validator
+- Jest: https://www.npmjs.com/package/jest
+- WesBos Linter Config: https://github.com/wesbos/eslint-config-wesbos
+- Inquirer: https://www.npmjs.com/package/inquirer
+- Email Validator: https://www.npmjs.com/package/email-validator
 
 ## Questions
 
